@@ -60,7 +60,7 @@ class ufw(
     #hasrestart => true,
     hasstatus => true,
     #restart   => 'ufw disable && ufw --force enable',
-    status    => 'ufw status | grep -q "Status: active"',
+    #status    => 'ufw status | grep -q "Status: active"',
     subscribe => Package['ufw'],
   }
 
